@@ -1,0 +1,11 @@
+<table class="table table-hover">
+    <tr *ngFor="let client of service._listOfClients">
+        <td (click)="populateForm(client)">{{client.FirstName}}</td>
+        <td (click)="populateForm(client)">{{client.LastName}}</td>
+        <td (click)="populateForm(client)">{{client.Email}}</td>
+        <td (click)="populateForm(client)">{{client.Telephone}}</td>
+        <td (click)="onDelete(client.Id)">
+            <i class="fa fa-trash fa-lg text-danger"></i>
+        </td>
+    </tr>
+</table>
